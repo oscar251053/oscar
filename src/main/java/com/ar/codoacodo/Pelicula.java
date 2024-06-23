@@ -2,7 +2,7 @@ package com.ar.codoacodo;
 
 public class Pelicula {
     // primero definimos los atributos(variables) que van a formar parte de la plantilla pelicula
-    private String idPelicula;
+    
     private String titulo;
     private String director;
     private String elenco;
@@ -17,7 +17,7 @@ public class Pelicula {
     public Pelicula() {
         // no recibe ningun parametro y no hace nada
     }
-    public Pelicula(String idPelicula, String titulo, String duracion, String genero, String imagen) {
+    public Pelicula(String titulo, String director, String elenco, String genero, String duracion, String sinopsis, String fechaDeEstreno, String clasificacion, String imagen) {
         // la palabra reservada this hace referencia a los atributos de la clase, del objeto que se esta creando en ese momento 
         
         this.titulo = titulo;
@@ -76,18 +76,15 @@ public class Pelicula {
     public void setGenero(String genero) {
         this.genero = genero;
     }
-
     public void setDuracion(String duracion) {
         this.duracion = duracion;
     }
-
     public void setSinopsis(String sinopsis) {
         this.sinopsis = sinopsis;
     }
     public void setFechaDeEstreno(String fechaDeEstreno) {
         this.fechaDeEstreno = fechaDeEstreno;
     }
-
     public void setClasificacion(String clasificacion) {
         this.clasificacion = clasificacion;
     }

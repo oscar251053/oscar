@@ -3,7 +3,7 @@ package com.ar.codoacodo;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-import javafx.beans.property.IntegerProperty;
+//import javafx.beans.property.IntegerProperty;
 
 /**
  * Hello world!

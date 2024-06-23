@@ -49,7 +49,6 @@ public class peliculaDAO { // Declara la clase PeliculaDAO.
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_PELICULAS_SQL)) { // Prepara la consulta SQL para seleccionar todas las películas.
             ResultSet resultSet = preparedStatement.executeQuery(); // Ejecuta la consulta y obtiene los resultados.
             while (resultSet.next()) { // Itera sobre los resultados de la consulta.
-                string idPelicula = resultSet.getInt(columnLabel: idPelicula);
                 String titulo = resultSet.getString("titulo"); // Obtiene el valor de la columna 'id_pelicula'.
                 String director = resultSet.getString("director"); // Obtiene el valor de la columna 'titulo'.
                 String elenco = resultSet.getString("elenco");
